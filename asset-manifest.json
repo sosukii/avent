@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/avent/static/css/main.1d766016.css",
+    "main.js": "/avent/static/js/main.eb661016.js",
+    "index.html": "/avent/index.html",
+    "main.1d766016.css.map": "/avent/static/css/main.1d766016.css.map",
+    "main.eb661016.js.map": "/avent/static/js/main.eb661016.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d766016.css",
+    "static/js/main.eb661016.js"
+  ]
+}

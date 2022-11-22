@@ -1,0 +1,83 @@
+
+@use '/styles/mixins.sass'
+
+@function vw($value, $size: 1920)
+  @return $value / $size * 100vw
+
+.header
+    display: flex
+    justify-content: center
+    background-color: var(--light-sky)
+
+.header-container
+    @include adaptiveProp('width', 290, 1600)
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid rgba(49, 45, 112, 0.05)
+    padding-top: 18px
+    padding-bottom: 22px
+
+.header-logo
+    padding-left: 12px
+    display: flex
+    align-items: center
+    @include adaptiveProp('font-size', 18, 30)
+    @include font-400
+    line-height: 30px
+
+.header-logo__Avent
+    color: #2644AD
+
+.header-logo__Board
+    color: var(--dark-blue)
+
+
+.navbar
+    display: flex
+    align-items: center
+    font-family: 'Graphik LCG Regular'
+    font-style: normal
+    font-weight: 400
+    @include adaptiveProp('font-size', 24, 18)
+    line-height: 18px
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+
+.navbar-list
+    display: flex
+    list-style: none
+    justify-content: center
+    gap: 25px
+
+.navbar-link
+    color: var(--dark-blue)
+    transition: 300ms
+    border-bottom: 1px solid transparent
+    &:hover
+        border-color: var(--dark-blue)
+
+
+.navbar-auth-buttons
+    padding-right: 12px
+    display: flex
+    gap: 23px
+
+.navbar-lk, .navbar-registration
+    background-color: var(--dark-blue)
+    border-radius: var(--border-radius)
+    border-color: var(--dark-blue)
+    color: #fff
+    font-family: 'Graphik LCG Regular'
+    font-size: 18px
+    font-weight: 400
+    padding: 13px 20px
+    &:hover
+        background-color: var(--light-sky)
+        color: var(--dark-blue)
+        cursor: pointer
+
+@media (min-width: 1921px)
+    .navbar, .navbar-lk, .navbar-registration
+        font-size: vw(18)
+    .header-container
+        width: vw(1601)
+

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Graphik-400';
+  src: url('assets/fonts/GraphikLCG-Regular.eot');
+  src: local('Graphik LCG Regular'), local('GraphikLCG-Regular'),
+      url('assets/fonts/GraphikLCG-Regular.eot?#iefix') format('embedded-opentype'),
+      url('assets/fonts/GraphikLCG-Regular.woff2') format('woff2'),
+      url('assets/fonts/GraphikLCG-Regular.woff') format('woff'),
+      url('assets/fonts/GraphikLCG-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik-500';
+    src: url('assets/fonts/GraphikLCG-Medium.eot');
+    src: local('Graphik LCG Medium'), local('GraphikLCG-Medium'),
+        url('assets/fonts/GraphikLCG-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/GraphikLCG-Medium.woff2') format('woff2'),
+        url('assets/fonts/GraphikLCG-Medium.woff') format('woff'),
+        url('assets/fonts/GraphikLCG-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik-600';
+    src: url('assets/fonts/GraphikLCG-Semibold.eot');
+    src: local('Graphik LCG Semibold'), local('GraphikLCG-Semibold'),
+        url('assets/fonts/GraphikLCG-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/GraphikLCG-Semibold.woff2') format('woff2'),
+        url('assets/fonts/GraphikLCG-Semibold.woff') format('woff'),
+        url('assets/fonts/GraphikLCG-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik-700';
+    src: url('assets/fonts/GraphikLCG-Bold.eot');
+    src: local('Graphik LCG Bold'), local('GraphikLCG-Bold'),
+        url('assets/fonts/GraphikLCG-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/GraphikLCG-Bold.woff2') format('woff2'),
+        url('assets/fonts/GraphikLCG-Bold.woff') format('woff'),
+        url('assets/fonts/GraphikLCG-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik-900';
+    src: url('assets/fonts/GraphikLCG-Black.eot');
+    src: local('Graphik LCG Black'), local('GraphikLCG-Black'),
+        url('assets/fonts/GraphikLCG-Black.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/GraphikLCG-Black.woff2') format('woff2'),
+        url('assets/fonts/GraphikLCG-Black.woff') format('woff'),
+        url('assets/fonts/GraphikLCG-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

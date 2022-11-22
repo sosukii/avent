@@ -1,0 +1,13 @@
+@mixin font-400
+    font-family: 'Graphik-400'
+@mixin font-500
+    font-family: 'Graphik-500'
+@mixin font-600
+    font-family: 'Graphik-600'
+@mixin font-700
+    font-family: 'Graphik-700'
+@mixin font-900
+    font-family: 'Graphik-900'
+
+@mixin adaptiveProp($targetProp, $minWidth, $maxWidth)
+    #{$targetProp}: calc(($minWidth * 1px) + ($maxWidth - $minWidth) * (100vw - 320px) / (1920 - 320))

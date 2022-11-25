@@ -1,8 +1,8 @@
-import React from "react";
-import { HashRouter, Routes, Route, Link } from "react-router-dom";
+import React from 'react'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
-import "App.css";
-import Layout from "pages/Layout/Layout.jsx";
+import 'App.css'
+import Layout from 'pages/Layout/Layout.jsx'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         </Route>
       </Routes>
     </HashRouter>
-  );
+  )
 }
 
-export default App;
+export default App

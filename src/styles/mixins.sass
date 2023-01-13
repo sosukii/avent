@@ -9,5 +9,8 @@
 @mixin font-900
     font-family: 'Graphik-900'
 
+@mixin center
+    margin: 0 auto
+
 @mixin adaptiveProp($targetProp, $minWidth, $maxWidth)
     #{$targetProp}: calc(($minWidth * 1px) + ($maxWidth - $minWidth) * (100vw - 320px) / (1920 - 320))

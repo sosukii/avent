@@ -1,83 +1,153 @@
 
-@use '/styles/mixins.sass'
+@import 'styles/mixins.sass'
 
 @function vw($value, $size: 1920)
   @return $value / $size * 100vw
 
-.header
-    display: flex
-    justify-content: center
-    background-color: var(--light-sky)
+.blue
+    color: var(--blue)
 
-.header-container
-    @include adaptiveProp('width', 290, 1600)
+.menu
+    &__icons
+        display: flex
+        gap: 10px
+    &__icon-wrapper
+        min-width: 50px
+        min-height: 50px
+        &:hover
+            cursor: pointer
+    &__icon
+        width: 100%
+    &__user-icon
+        content: url('/assets/icons/user-icon.svg')
+    &__menu-icon
+        content: url('/assets/icons/menu-icon.svg')
+    &__user-icon-popup
+        content: url('/assets/icons/user-icon__popup.svg')
+    &__menu-close-icon
+        content: url('/assets/icons/menu-close-icon__popup.svg')
+
+.menu-popup
+    padding: 20px 15px
+    @include font-400
+.popup-btns
+    display: flex
+    flex-direction: column
+    gap: 20px
+    padding-bottom: 40px
+    font-size: 18px
+    &__btn
+        padding-top: 15px
+        padding-bottom: 15px
+        min-width: 288px
+        border-radius: 8px
+        color: #fff
+    &__lk
+        background-color: var(--dark-blue)
+        border: 2px solid #fff
+    &__reg
+        background-color: var(--blue)
+        border: none
+
+.popup-hat, .popup-navbar
+    font-size: 24px
+
+.popup-hat
     display: flex
     justify-content: space-between
-    border-bottom: 1px solid rgba(49, 45, 112, 0.05)
-    padding-top: 18px
-    padding-bottom: 22px
+    padding-bottom: 20px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4)
 
-.header-logo
-    padding-left: 12px
+.popup-navbar
+    padding-top: 40px
+    padding-bottom: 40px
+
+.popup-navbar-list
     display: flex
-    align-items: center
-    @include adaptiveProp('font-size', 18, 30)
-    @include font-400
-    line-height: 30px
-
-.header-logo__Avent
-    color: #2644AD
-
-.header-logo__Board
-    color: var(--dark-blue)
-
-
-.navbar
-    display: flex
-    align-items: center
-    font-family: 'Graphik LCG Regular'
-    font-style: normal
-    font-weight: 400
-    @include adaptiveProp('font-size', 24, 18)
-    line-height: 18px
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-
-.navbar-list
-    display: flex
-    list-style: none
-    justify-content: center
+    flex-direction: column
     gap: 25px
 
-.navbar-link
-    color: var(--dark-blue)
-    transition: 300ms
-    border-bottom: 1px solid transparent
-    &:hover
-        border-color: var(--dark-blue)
-
-
-.navbar-auth-buttons
-    padding-right: 12px
+.popup-socials
     display: flex
-    gap: 23px
+    gap: 20px
+.popup-social-wrapper
+    width: 35px
+    height: 35px
+.popup-social
+    width: 100%
+    opacity: 0.7
 
-.navbar-lk, .navbar-registration
-    background-color: var(--dark-blue)
-    border-radius: var(--border-radius)
-    border-color: var(--dark-blue)
-    color: #fff
-    font-family: 'Graphik LCG Regular'
-    font-size: 18px
-    font-weight: 400
-    padding: 13px 20px
-    &:hover
-        background-color: var(--light-sky)
+.fb-social
+    content: url('/assets/icons/facebook-logo.svg')
+.vk-social
+    content: url('/assets/icons/vk-logo.svg')
+.ig-social
+    content: url('/assets/icons/instagram-logo.svg')
+
+.popup-links
+    display: flex
+    flex-direction: column
+    opacity: 0.8
+    font-size: 11px
+
+.popup-bottom
+    display: flex
+    justify-content: space-between
+    padding-top: 20px
+    padding-bottom: 20px
+    border-top: 1px solid rgba(255, 255, 255, 0.4)
+    align-items: center
+
+.navbar
+    position: absolute
+
+
+.header
+    background-color: #fff
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    &__container
+        margin: 0 auto
+        display: flex
         color: var(--dark-blue)
-        cursor: pointer
+        align-items: center
+        justify-content: space-between
+        min-height: 85px
+    &__logo
+        max-width: 72px
 
-@media (min-width: 1921px)
-    .navbar, .navbar-lk, .navbar-registration
-        font-size: vw(18)
-    .header-container
-        width: vw(1601)
+.logo-mobile
+    display: block
+    max-width: 72px
+    line-height: 24px
+    @include font-700
 
+
+@media screen and (min-width: 190px)
+    .navbar
+        display: none
+    .menu-popup
+        position: fixed
+        color: #fff
+        background-color: var(--dark-blue)
+        width: 100vw
+        height: 100vh
+
+    .popup-hat
+
+
+    .header__container
+        // max-width: 80%
+        position: relative
+@media screen and (min-width: 420px)
+    .header
+        background-color: #fff
+@media screen and (max-width: 600px)
+
+@media screen and (max-width: 768px)
+
+@media screen and (max-width: 1024px)
+
+@media screen and (max-width: 1280px)

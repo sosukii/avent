@@ -1,11 +1,12 @@
 import { Outlet, Link } from 'react-router-dom'
 import 'pages/Layout/Layout.sass'
+import 'pages/Layout/LayoutMediaQueries.sass'
 
 const Layout = () => {
   return (
     <>
       <header className="header">
-        <div className="header__container">
+        <div className="header__container container">
           <Link to="/" className="header__logo logo-mobile">
             <span className="blue">Avent</span> Board
           </Link>
@@ -46,7 +47,7 @@ const Layout = () => {
         </div>
       </header>
 
-      <div className="menu-popup">
+      <div className="menu-popup container">
         <div className="popup-hat">
           <Link to="/" className="header__logo logo-mobile">
             <span className="blue">Avent</span> Board

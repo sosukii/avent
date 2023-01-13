@@ -162,7 +162,7 @@ const Layout = () => {
         </div>
       </header> */}
 
-      <main className="main">
+      <main className="main container">
         <Outlet />
         <section>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
@@ -340,7 +340,7 @@ const Layout = () => {
         </section>
       </main>
 
-      <footer className="footer">footer here</footer>
+      <footer className="footer container">footer here</footer>
     </>
   )
 }

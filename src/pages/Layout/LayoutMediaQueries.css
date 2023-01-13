@@ -1,0 +1,29 @@
+@media screen and (min-width: 320px) {
+  .header__logo {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .menu-popup {
+    right: -320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .menu-popup {
+    right: -768px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .menu-popup {
+    display: none;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .header__logo {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}

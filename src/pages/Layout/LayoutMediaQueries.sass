@@ -1,22 +1,39 @@
 
 
 
-@media screen and (min-width: 320px)
+@media screen and (min-width: 220px)
   .header
     &__logo
       font-size: 24px
       line-height: 24px
+  .auth-btns
+    display: none
+  .navbar
+      display: none
   .menu-popup
-    right: -320px
+    position: fixed
+    color: #fff
+    background-color: var(--dark-blue)
+    width: 100vw
+    height: 100vh
+
+
 
 
 @media screen and (min-width: 768px)
+  .navbar
+    display: flex
+  .navbar-list
+    display: flex
   .header
     &__logo
       font-size: 24px
       line-height: 24px
-  .menu-popup
-    right: -768px
+  .menu
+    &__icons
+      display: none
+  .auth-btns
+    display: flex
 
 @media screen and (min-width: 769px)
   .menu-popup

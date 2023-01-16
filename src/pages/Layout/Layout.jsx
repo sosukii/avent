@@ -1,25 +1,29 @@
 import { Outlet, Link } from 'react-router-dom'
 import 'pages/Layout/Layout.sass'
 import 'pages/Layout/LayoutMediaQueries.sass'
+import React, { useState } from 'react'
 
 const Layout = () => {
+  const [show, setShow] = useState(false)
+  function toggleMenu() {
+    console.log('clicked on menu btn')
+    setShow((current) => !current)
+
+    console.log(show)
+    // setShow((current) => !current)
+  }
   return (
     <>
       <header className="header">
         <div className="header__container container">
-          <Link to="/" className="header__logo logo-mobile">
-            <span className="blue">Avent</span> Board
-          </Link>
-          <div className="menu">
-            <div className="header__icons menu__icons">
-              <div className="header__icon-wrapper menu__icon-wrapper">
-                <div className="header__user-icon menu__user-icon menu__icon"></div>
-              </div>
-              <div className="header__icon-wrapper menu__icon-wrapper">
-                <div className="header__user-icon menu__menu-icon menu__icon"></div>
-              </div>
-            </div>
-            <nav className="navbar">
+          <div className="logo-wrapper">
+            <Link to="/" className="header__logo logo-mobile">
+              <span className="blue">Avent</span> Board
+            </Link>
+          </div>
+
+          <nav className="navbar">
+            <div className="navbar-wrapper">
               <ul className="navbar-list">
                 <li>
                   <Link to="/schedule" className="navbar-link">
@@ -42,125 +46,103 @@ const Layout = () => {
                   </Link>
                 </li>
               </ul>
+            </div>
+          </nav>
+          <div className="auth-btns">
+            <button className="auth-btns__lk">Личный кабинет</button>
+            <button className="auth-btns__reg">Регистрация</button>
+          </div>
+
+          <div className="menu__icons">
+            <div className="menu__icon-wrapper">
+              <div className="menu__user-icon"></div>
+            </div>
+            <div onClick={toggleMenu} className="menu__icon-wrapper">
+              <div className="menu__menu-icon"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className={`menu-popup container ${show ? 'menu-open' : null}`}>
+          <div className="popup-hat">
+            <Link to="/" className="header__logo logo-mobile">
+              <span className="blue">Avent</span> Board
+            </Link>
+            <div className="header__icons menu__icons">
+              <div className="header__icon-wrapper menu__icon-wrapper">
+                <div className="header__user-icon menu__user-icon-popup menu__icon "></div>
+              </div>
+              <div
+                onClick={toggleMenu}
+                className="header__icon-wrapper menu__icon-wrapper"
+              >
+                <div className="header__user-icon menu__menu-close-icon menu__icon "></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="popup-body">
+            <nav className="popup-navbar">
+              <ul className="popup-navbar-list">
+                <li>
+                  <Link to="/schedule" className="navbar-link">
+                    Договоры
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/staff" className="navbar-link">
+                    Сотрудники
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/calendar" className="navbar-link">
+                    Календарь
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/finance" className="navbar-link">
+                    Финансы
+                  </Link>
+                </li>
+              </ul>
             </nav>
+
+            <div className="popup-btns">
+              <button className="popup-btns__lk popup-btns__btn">
+                Личный кабинет
+              </button>
+              <button className="popup-btns__reg popup-btns__btn">
+                Регистрация
+              </button>
+            </div>
+
+            <div className="popup-bottom">
+              <div className="popup-socials">
+                <div className="popup-social-wrapper">
+                  <div className="popup-social fb-social"></div>
+                </div>
+                <div className="popup-social-wrapper">
+                  <div className="popup-social vk-social"></div>
+                </div>
+                <div className="popup-social-wrapper">
+                  <div className="popup-social ig-social"></div>
+                </div>
+              </div>
+              <div className="popup-links">
+                <a href="tel:+900600500" className="popup-number">
+                  +7-900-600-500
+                </a>
+                <a href="mailto:promo@aventcompany.ru" className="popup-email">
+                  mail@mail.ru
+                </a>
+                <a href="https://aventcompany.ru/" className="popup-site">
+                  aventcompany.ru
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </header>
-
-      <div className="menu-popup container">
-        <div className="popup-hat">
-          <Link to="/" className="header__logo logo-mobile">
-            <span className="blue">Avent</span> Board
-          </Link>
-          <div className="header__icons menu__icons">
-            <div className="header__icon-wrapper menu__icon-wrapper">
-              <div className="header__user-icon menu__user-icon-popup menu__icon "></div>
-            </div>
-            <div className="header__icon-wrapper menu__icon-wrapper">
-              <div className="header__user-icon menu__menu-close-icon menu__icon "></div>
-            </div>
-          </div>
-        </div>
-
-        <div className="popup-body">
-          <nav className="popup-navbar">
-            <ul className="popup-navbar-list">
-              <li>
-                <Link to="/schedule" className="navbar-link">
-                  Договоры
-                </Link>
-              </li>
-              <li>
-                <Link to="/staff" className="navbar-link">
-                  Сотрудники
-                </Link>
-              </li>
-              <li>
-                <Link to="/calendar" className="navbar-link">
-                  Календарь
-                </Link>
-              </li>
-              <li>
-                <Link to="/finance" className="navbar-link">
-                  Финансы
-                </Link>
-              </li>
-            </ul>
-          </nav>
-
-          <div className="popup-btns">
-            <button className="popup-btns__lk popup-btns__btn">
-              Личный кабинет
-            </button>
-            <button className="popup-btns__reg popup-btns__btn">
-              Регистрация
-            </button>
-          </div>
-
-          <div className="popup-bottom">
-            <div className="popup-socials">
-              <div className="popup-social-wrapper">
-                <div className="popup-social fb-social"></div>
-              </div>
-              <div className="popup-social-wrapper">
-                <div className="popup-social vk-social"></div>
-              </div>
-              <div className="popup-social-wrapper">
-                <div className="popup-social ig-social"></div>
-              </div>
-            </div>
-            <div className="popup-links">
-              <a href="tel:+900600500" className="popup-number">
-                +7-900-600-500
-              </a>
-              <a href="mailto:promo@aventcompany.ru" className="popup-email">
-                mail@mail.ru
-              </a>
-              <a href="https://aventcompany.ru/" className="popup-site">
-                aventcompany.ru
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* <header className="header">
-        <div className="header-container">
-          <div className="header-wrapper">
-            <Link to="/" className="header__logo"><span className="blue">Avent</span> Board</Link>
-            <div className="header-popup">
-              <nav className="navbar">
-                <ul className="navbar-list">
-                  <li>
-                    <Link to="/schedule" className="navbar-link">Договоры</Link>
-                  </li>
-                  <li>
-                    <Link to="/staff" className="navbar-link">Сотрудники</Link>
-                  </li>
-                  <li>
-                    <Link to="/calendar" className="navbar-link">Календарь</Link>
-                  </li>
-                  <li>
-                    <Link to="/finance" className="navbar-link">Финансы</Link>
-                  </li>
-                </ul>
-              </nav>
-              <div className="navbar-auth-btns">
-                <button className="navbar-lk">Личный кабинет</button>
-                <Link to="/auth" >
-                  <button className="navbar-registration">Регистрация</button>
-                </Link>
-              </div>
-            </div>
-
-            <div className="header-icons">
-              <div className="header-icons__user"></div>
-              <div className="header-icons__burger-btn"></div>
-            </div>
-
-          </div>
-        </div>
-      </header> */}
 
       <main className="main container">
         <Outlet />

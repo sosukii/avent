@@ -27,11 +27,15 @@
     &__menu-close-icon
         content: url('/assets/icons/menu-close-icon__popup.svg')
 
+
+
 .menu-popup
+    top: 0
     padding: 20px 15px
     @include font-400
     position: absolute
     transition: 0.8s
+    right: -100vw
 
 .popup-btns
     display: flex
@@ -102,7 +106,7 @@
     align-items: center
 
 .navbar
-    position: absolute
+
 
 
 .header
@@ -128,29 +132,5 @@
     @include font-700
 
 
-@media screen and (min-width: 190px)
-    .navbar
-        display: none
-    .menu-popup
-        position: fixed
-        color: #fff
-        background-color: var(--dark-blue)
-        width: 100vw
-        height: 100vh
-
-    .popup-hat
-
-
-    .header__container
-        // max-width: 80%
-        position: relative
-@media screen and (min-width: 420px)
-    .header
-        background-color: #fff
-@media screen and (max-width: 600px)
-
-@media screen and (max-width: 768px)
-
-@media screen and (max-width: 1024px)
-
-@media screen and (max-width: 1280px)
+.menu-open
+    right: 0

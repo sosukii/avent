@@ -1,13 +1,40 @@
 {
   "files": {
-    "main.css": "/avent/static/css/main.1d766016.css",
-    "main.js": "/avent/static/js/main.eb661016.js",
+    "main.css": "/avent/static/css/main.862a0655.css",
+    "main.js": "/avent/static/js/main.e6472872.js",
+    "static/media/GraphikLCG-Bold.eot": "/avent/static/media/GraphikLCG-Bold.512a41a502809fa05cfc.eot",
+    "static/media/GraphikLCG-Bold.ttf": "/avent/static/media/GraphikLCG-Bold.768cd7c3be4c3b053725.ttf",
+    "static/media/GraphikLCG-Medium.eot": "/avent/static/media/GraphikLCG-Medium.9cabc889598a9d8304af.eot",
+    "static/media/GraphikLCG-Medium.ttf": "/avent/static/media/GraphikLCG-Medium.4a5dcaf7fa9bba05febc.ttf",
+    "static/media/GraphikLCG-Black.eot": "/avent/static/media/GraphikLCG-Black.32209237499ab8f71499.eot",
+    "static/media/GraphikLCG-Black.ttf": "/avent/static/media/GraphikLCG-Black.4b12db832e90c32cb7d2.ttf",
+    "static/media/GraphikLCG-Semibold.eot": "/avent/static/media/GraphikLCG-Semibold.5c1634ef842597213b13.eot",
+    "static/media/GraphikLCG-Semibold.ttf": "/avent/static/media/GraphikLCG-Semibold.e4da0441de0583042048.ttf",
+    "static/media/GraphikLCG-Regular.eot": "/avent/static/media/GraphikLCG-Regular.131ad5e8eab917fe9b29.eot",
+    "static/media/GraphikLCG-Regular.ttf": "/avent/static/media/GraphikLCG-Regular.35faf011ef568c1b8540.ttf",
+    "static/media/GraphikLCG-Bold.woff": "/avent/static/media/GraphikLCG-Bold.c9ff0f7c3d4ed57d90d3.woff",
+    "static/media/GraphikLCG-Medium.woff": "/avent/static/media/GraphikLCG-Medium.da060490b09fc1374496.woff",
+    "static/media/GraphikLCG-Black.woff": "/avent/static/media/GraphikLCG-Black.a1a832002b03a31c3d34.woff",
+    "static/media/GraphikLCG-Regular.woff": "/avent/static/media/GraphikLCG-Regular.b4fc93d5073c5d6f5235.woff",
+    "static/media/GraphikLCG-Semibold.woff": "/avent/static/media/GraphikLCG-Semibold.fc26960328c43dd3bd34.woff",
+    "static/media/GraphikLCG-Bold.woff2": "/avent/static/media/GraphikLCG-Bold.3b87dd12850e09d66069.woff2",
+    "static/media/GraphikLCG-Black.woff2": "/avent/static/media/GraphikLCG-Black.a70e1bf4edef581df456.woff2",
+    "static/media/GraphikLCG-Medium.woff2": "/avent/static/media/GraphikLCG-Medium.fd80167e2a691d063a21.woff2",
+    "static/media/GraphikLCG-Regular.woff2": "/avent/static/media/GraphikLCG-Regular.92a1ff709799ec31f9f0.woff2",
+    "static/media/GraphikLCG-Semibold.woff2": "/avent/static/media/GraphikLCG-Semibold.1fb21de006aaa091fd82.woff2",
+    "static/media/instagram-logo.svg": "/avent/static/media/instagram-logo.c3e0201f4e01bb3880a5.svg",
+    "static/media/vk-logo.svg": "/avent/static/media/vk-logo.121da3c8e33cfcda368f.svg",
+    "static/media/user-icon__popup.svg": "/avent/static/media/user-icon__popup.80fce49ea310f6a9e92b.svg",
+    "static/media/user-icon.svg": "/avent/static/media/user-icon.f231793d8059113189fb.svg",
+    "static/media/facebook-logo.svg": "/avent/static/media/facebook-logo.f70110915c51e3859b51.svg",
+    "static/media/menu-close-icon__popup.svg": "/avent/static/media/menu-close-icon__popup.fcb17331c6a265d4b482.svg",
+    "static/media/menu-icon.svg": "/avent/static/media/menu-icon.68e205efab278dc800d4.svg",
     "index.html": "/avent/index.html",
-    "main.1d766016.css.map": "/avent/static/css/main.1d766016.css.map",
-    "main.eb661016.js.map": "/avent/static/js/main.eb661016.js.map"
+    "main.862a0655.css.map": "/avent/static/css/main.862a0655.css.map",
+    "main.e6472872.js.map": "/avent/static/js/main.e6472872.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d766016.css",
-    "static/js/main.eb661016.js"
+    "static/css/main.862a0655.css",
+    "static/js/main.e6472872.js"
   ]
 }

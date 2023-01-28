@@ -23,8 +23,10 @@
 @media screen and (min-width: 768px)
   .navbar
     display: flex
+    max-width: 200px
   .navbar-list
     display: flex
+    row-gap: 6px
   .header
     &__logo
       font-size: 24px
@@ -38,6 +40,9 @@
 @media screen and (min-width: 769px)
   .menu-popup
     display: none
+@media screen and (min-width: 970px)
+  .navbar
+    max-width: none
 @media screen and (min-width: 1920px)
   .header
     &__logo

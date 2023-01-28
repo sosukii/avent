@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/avent/static/css/main.862a0655.css",
+    "main.css": "/avent/static/css/main.abd628a9.css",
     "main.js": "/avent/static/js/main.e6472872.js",
     "static/media/GraphikLCG-Bold.eot": "/avent/static/media/GraphikLCG-Bold.512a41a502809fa05cfc.eot",
     "static/media/GraphikLCG-Bold.ttf": "/avent/static/media/GraphikLCG-Bold.768cd7c3be4c3b053725.ttf",
@@ -30,11 +30,11 @@
     "static/media/menu-close-icon__popup.svg": "/avent/static/media/menu-close-icon__popup.fcb17331c6a265d4b482.svg",
     "static/media/menu-icon.svg": "/avent/static/media/menu-icon.68e205efab278dc800d4.svg",
     "index.html": "/avent/index.html",
-    "main.862a0655.css.map": "/avent/static/css/main.862a0655.css.map",
+    "main.abd628a9.css.map": "/avent/static/css/main.abd628a9.css.map",
     "main.e6472872.js.map": "/avent/static/js/main.e6472872.js.map"
   },
   "entrypoints": [
-    "static/css/main.862a0655.css",
+    "static/css/main.abd628a9.css",
     "static/js/main.e6472872.js"
   ]
 }
